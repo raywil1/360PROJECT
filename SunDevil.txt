@@ -1,0 +1,82 @@
+Project Overview:Introduction:
+The SunDevil Pizza store would like to test a new ordering system to help ASU
+students be able to conveniently order pizza for pickup. The objectives of the new
+system are:
+● Allow all ASU students with valid ASU id numbers to order pizza online.
+● The new system should give the client status messages as the pizza goes
+through being prepped and cooked.
+● Then the client should receive a confirmation of the finished pizza.
+Non-functional requirements:
+● The change in status on the application should line up with the exchange of the
+pizza ingredients from the online processing agent to the chef.
+● Reasonable time given for the online processing agent to prepare ingredients for
+the chef.
+● Reasonable time given as a baseline for the chef to finish cooking the pizza.
+● Rejection emails should be sent as fast as possible as the ASU Id returns as
+invalid.
+● Add the order to the semester food cost for the student
+Functional requirements:
+● Give the client different pizza types:
+○ Pepperoni pizza
+○ Vegetable pizza
+○ Cheese pizza
+● After type is chosen give additional topping list:
+○ Mushroom
+○ Olives
+○ Onions
+○ Extra cheese
+● Validate whether the ASU id is indeed valid.(number is 10 digits long).
+○ Send rejection email
+○ Set status message to accepted
+● When accepted order processing agent preps the pizza to be given to chef
+○ Set status message to READY TO COOK
+○ Add costs to their total semester food costs
+● Chef takes READY TO COOK orders and places them in oven
+○ Set status message to COOKING
+○ Once chef finishes pizza
+■ Set status to READY
+■ Send email that the pizza is ready for pickup
+System Users:
+These are the potential actors on the new SunDevil pizza order system:
+● Clients: ALL ASU students with valid ID’s: the clients will be able to complete a
+ordering form that specifies the pizza type, toppings and potential pickup time.
+● Processing agents: the processing agents are concerned with the specifications
+of the clients pizza and to deliver a prepped pizza to be cooked to the chef. They
+are also concerned with setting a new status message once this has been
+completed.
+● Chefs: The Chefs take the prepped pizza and finish cooking it in the oven.
+They’re secondary role is to set a new status first when they receive the pizza
+and set it to cooking. Then at the end of the process where the pizza is finished
+they set the status to READY and an email is sent directly to the client signifying
+the pizza is ready for pickup.
+System Concerns:
+● User is a valid Arizona State University student currently enrolled for the school
+year
+● Ensure proper interaction between system user
+● Correct information is presented to the user and sent to the processing agents
+● User is properly charged for their order and have it added to their total semester
+food cost
+The Process:
+● This project will be split up into four phases
+○ Phase 1:
+■ Establish the requirements for this project
+■ Give a walkthrough of of how the user will interact with the
+application
+■ Determine a plan for implementation
+○ Phase 2:
+■ Determine the use cases
+■ Create a diagram that will illustrate how the user will perform
+tasks on the application and the interaction between different
+agents
+■ Come up with a plan for functional testing, ensure that the
+application can pass through multiple test cases
+■ Create an initial prototype of the code
+○ Phase 3:
+■ This is the implementation phase of the project
+■ Create code for the application and develop a demo version
+○ Phase 4:
+■ Create the final class diagram
+■ Create a report for how the test cases went and address any
+issues
+■ Make a presentation to advertise application to targeted
+audience
